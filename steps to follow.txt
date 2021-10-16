@@ -1,0 +1,31 @@
+### Initial Setup for any MERN project ###
+1.create frontend with create-react-app
+2.clear unnecessery files like app.test logo.svg from frontend. 
+3.remove .git from frontend and move .gitignore to root directory 
+4.add node_modules/ and .env to .gitignore
+5.At root directory git init
+
+## FrontEnd ## 
+1.npm i react-bootstrap 
+2.bootswatch -> choose a theme and download bootstrap.min.css > import bootstrap on index.js
+3.font-awesome cdnjs . include the link to index.html
+
+**Router setup 
+4.npm i react-router-dom react-router-bootstrap
+5.import BrowserRouter as Router from react-router-dom and route
+6.Use LinkContainer so that it works with react-bootstrap
+
+**Redux Setup 
+7.npm i redux react-redux 
+8.npm i redux-thunk (for asynchronus action calls)
+9.npm i redux-devtool-extension (to configure devtool with the project)
+
+**Other Important Stufs. 
+10.Setup Proxy and restart frontend. pakage.json > "proxy": "http://127.0.0.1:port_number"
+
+
+###Backend###
+1.craete a folder called backend on root. 
+2.npm init on root and install backend dependencies on root directory. 
+3.use es6 moduler export syntax
+4.configure db connection on a seperate file. config>db.js
