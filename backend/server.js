@@ -9,7 +9,11 @@ app.get('/api/gymdates',async(req,res,next) => {
 })
 app.post('/api/gymDates',async(req,res,next) => { 
 
-  d.push(req.body.day); 
+  if(d.includes(req.body.day)) { 
+    d = d.filter(days => days !== req.body.day); 
+  } else { 
+    d.push(req.body.day); 
+  }
   res.send(d); 
 })
 app.listen(5000, () => { 
