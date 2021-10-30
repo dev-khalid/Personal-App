@@ -1,0 +1,17 @@
+##Study Hours 
+	1.weekly target hours . [there should be a option to set it only once in a week
+	this button should be abled on only friday or after friday. once this is set 
+	this button should be disabled again. 
+	
+	onClick this button there will be a form appeared. where it will ask for target hours. 
+	]
+	2.Target hourse shold be printed as i used to print in on my sticky notes and 
+	there should be maximum 50 hours printed if extra then this should print another 
+	stick note . Example : if i set target of 70 hours there should be two box 
+	appearing, one with 50 hours and another with 20 hours. and each tile should 
+	be markable . and if i mark it this should be marked as i used to do in my 
+	sticky notes. 
+	
+	3.How many hours is read in a day should be calculated automatically and added
+	to a bar chart . [it should also maintain a range wise color also. 
+	Example : if i study [0-4 hours this should be red , >4-<6 yellow, >=6 green]
