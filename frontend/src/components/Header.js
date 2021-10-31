@@ -3,7 +3,7 @@ import { Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 const Header = () => {
   return (
-    <Nav defaultActiveKey="/home" className="flex-column">
+    <Nav  className="flex-column nav nav-pills">
       <LinkContainer to="/home">
         <Nav.Link>Home</Nav.Link>
       </LinkContainer>
@@ -11,7 +11,7 @@ const Header = () => {
         <Nav.Link>Gym Tracker</Nav.Link>
       </LinkContainer>
       <LinkContainer to="/study">
-        <Nav.Link>Study</Nav.Link> 
+        <Nav.Link>Study</Nav.Link>
       </LinkContainer>
     </Nav>
   );

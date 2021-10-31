@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Header from './components/Header';
-import ExerciseScreen from './screens/ExerciseScreen';
+import GymScreen from './screens/GymScreen';
 import {BrowserRouter as Router,Route} from 'react-router-dom'
 
 /**
@@ -14,17 +14,17 @@ import {BrowserRouter as Router,Route} from 'react-router-dom'
  */
 function App() {
   return (
-    <Router>
-      <Container>
+    <Router> 
+      <Container style={{"marginLeft": "0px"}}>
         <Row>
-          <Col className="col-md-3 bg-dark rounded" variant="dark">
+          <Col md={2} className={'bg-dark py-3'} style={{"height":"100vh"}} variant="dark">
             <Header />
           </Col>
-          <Col className="col-md-9 "> 
-            <Route path='/gym' component={ExerciseScreen} />  
+          <Col md={10}> 
+            <Route path='/gym' component={GymScreen} />  
           </Col>
-        </Row>
-      </Container>
+        </Row> 
+        </Container>
     </Router>
   );
 }
