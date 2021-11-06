@@ -1,0 +1,3 @@
+1.work with postGymData . we need to refine it . and also we need to organize getGymData.
+2.show gym dates 
+3.show data on a pie chart

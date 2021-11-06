@@ -1,9 +1,10 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { gymDateDetailsReducers } from './reducers/gymReducers';
+import { gymDateCreateReducer, gymDateDetailsReducer } from './reducers/gymReducers';
 const reducer = combineReducers({
-  gymDateDetails: gymDateDetailsReducers,
+  gymDateDetails: gymDateDetailsReducer,
+  gymDateCreate: gymDateCreateReducer, 
 }); //state setup korte hobef
 
 //initial state setup korte hobe jeigula localstorage theke asbe arki
